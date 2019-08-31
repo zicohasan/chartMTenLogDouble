@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qmul.deni.chartmtenlogdouble.ChartManagerActivity">
+
+    <ProgressBar
+        android:id="@+id/progressChartManager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleChartManager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/addChartManagerButton"
+        android:layout_marginTop="17dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/addChartManagerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Create a chart" />
+
+    <Button
+        android:id="@+id/backChartManagerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/manageAccountButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/backChartManagerButton"
+        android:layout_toStartOf="@+id/backChartManagerButton"
+        android:text="Manage Account" />
+
+
+
+</RelativeLayout>

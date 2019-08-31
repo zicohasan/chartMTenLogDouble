@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qmul.deni.chartmtenlogdouble.WorkgroupAddActivity">
+
+
+    <EditText
+        android:id="@+id/workgroupName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/accessCode"
+        android:layout_alignStart="@+id/accessCode"
+        android:layout_below="@+id/accessCode"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Workgroup Name"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/accessCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="12dp"
+        android:text="Access Code" />
+
+
+    <Button
+        android:id="@+id/buttonAddWorkgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/workgroupName"
+        android:layout_alignBottom="@+id/workgroupName"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/workgroupName"
+        android:layout_toRightOf="@+id/workgroupName"
+        android:text="Create" />
+
+    <Button
+        android:id="@+id/backButtonWorkgroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/buttonAddWorkgroup"
+        android:layout_marginTop="31dp"
+        android:text="Back" />
+
+</RelativeLayout>
